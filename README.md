@@ -1,6 +1,6 @@
 This project has been made to solve the following challenge:
 
-<h1>Form parser
+<h1>Form parser</h1>
 
 ```xml
 <Form>
