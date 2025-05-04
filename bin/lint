@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cd "${BASH_SOURCE%/*}/.." || exit
+
+docker-compose run --rm lint golangci-lint --color=always run "${@:1}"

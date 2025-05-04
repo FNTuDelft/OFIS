@@ -1,0 +1,47 @@
+linters:
+  enable:
+    - govet
+    - gofmt
+    - goimports
+    - gocritic
+    - errcheck
+    - gocyclo
+    - gosec
+    - staticcheck
+    - unused
+    - gosimple
+    - whitespace
+    - nakedret
+    - ineffassign
+    - gocognit
+    - tparallel
+    - makezero
+    - forbidigo
+    - noctx
+    - predeclared
+    - nonamedreturns
+    - nlreturn
+    - stylecheck
+    - revive
+    - prealloc
+    - wastedassign
+    - unparam
+    - err113
+    - paralleltest
+    - testpackage
+    - thelper
+    - wrapcheck
+    - gofumpt
+
+linters-settings:
+  go-cyclo:
+    min-complexity: 10
+  err113:
+    require-error-wrapping: true
+  prealloc:
+    simple: true
+
+run:
+  timeout: 2m
+  tests: true
+  modules-download-mode: readonly

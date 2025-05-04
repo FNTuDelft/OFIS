@@ -1,0 +1,24 @@
+{{ define "field" }}
+  <div class="form-field">
+    <label for="{{ .Name }}">{{ .Caption }}</label>
+
+    {{ if eq .FieldType "Select" }}
+      <select id="{{ .Name }}" name="{{ .Name }}">
+        {{ range .Options }}
+        <option name="{{ .Name }}" value="{{ .Value }}">{{ .Value }}</option>
+        {{ end }}
+      </select>
+
+    {{ else if eq .FieldType "TextBox" }}
+      <textarea id="{{ .Name }}" name="{{ .Name }}"></textarea>
+
+    {{ else if eq .FieldType "File" }}
+      <input type="file" id="{{ .Name }}" name="{{ .Name }}">
+
+    {{ else }}
+      <input type="text" id="{{ .Name }}" name="{{ .Name }}">
+    {{ end }}
+
+    {{ if .Optional }}<span class="optional">(optional)</span>{{ end }}
+  </div>
+{{ end }}

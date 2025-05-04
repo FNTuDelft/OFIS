@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cd "${BASH_SOURCE%/*}/.." || exit
+
+docker-compose run --rm --service-ports go go run /app/cmd/app/main.go "${@:1}"

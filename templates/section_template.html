@@ -1,0 +1,8 @@
+{{ define "section" }}
+  <fieldset class="form-section">
+    <legend>{{ .Title }}</legend>
+    {{ range .Fields }}
+      {{template "field" .}}
+    {{ end }}
+  </fieldset>
+{{ end }}
