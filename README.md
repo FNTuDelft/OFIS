@@ -82,3 +82,5 @@ Which hold structs which still need to be implemented. I did not find the time t
 `./internal/form/json_parser.go` would allow for JSON input form templates (currently only XML is possible).
 
 `./internal/submission/{json,html,xml}_renderer.go` would allow for submission confirmations in different file types (currently only supported in PDF).
+
+I also did not find the time to implement input type validation on a form submission. Currently the validation only checks if all non-optional values are submitted. If not it also doesn't really return a user friendly error. This is also something I still wanted to fix, but did not find the time for it.
