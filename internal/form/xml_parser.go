@@ -4,7 +4,6 @@ import (
 	"encoding/xml"
 	"fmt"
 	"io"
-
 	"ofis/internal/errors"
 )
 

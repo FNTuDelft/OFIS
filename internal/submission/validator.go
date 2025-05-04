@@ -2,7 +2,6 @@ package submission
 
 import (
 	"fmt"
-
 	"ofis/internal/errors"
 	"ofis/internal/form"
 )

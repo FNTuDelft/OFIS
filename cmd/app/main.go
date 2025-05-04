@@ -5,6 +5,9 @@ import (
 	"errors"
 	"log"
 	"net/http"
+	"ofis/internal/form"
+	"ofis/internal/middleware"
+	"ofis/internal/submission"
 	"os"
 	"os/signal"
 	"syscall"
@@ -12,9 +15,6 @@ import (
 	"time"
 
 	perrors "ofis/internal/errors"
-	"ofis/internal/form"
-	"ofis/internal/middleware"
-	"ofis/internal/submission"
 )
 
 // htmlTemplate is the HTML template which the input form template is supposed to be build into.
